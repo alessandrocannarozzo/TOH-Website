@@ -158,16 +158,22 @@
     <p>Stiamo preparando le prime attivazioni. Lasciaci i tuoi dati: ti ricontatteremo per mostrarti il sistema e spiegarti come aderire.</p>
     <div class="mini-points"><span>✓ Configurazione guidata</span><span>✓ Supporto TOH!</span><span>✓ Terminale dedicato</span></div>
   </div>
-  <form class="lead-form" onsubmit="return submitLead(event)">
-    <label>Nome pizzeria<input required name="pizzeria" placeholder="Es. Pizzeria da Mario"></label>
+  <form class="lead-form" id="partnerLeadForm" action="https://formsubmit.co/ajax/partner@tohfood.it" method="POST" onsubmit="return submitLead(event)">
+    <input type="hidden" name="_subject" value="Nuova richiesta TOH! Partner da tohfood.it">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_url" value="https://tohfood.it/#partner">
+    <input type="text" name="_honey" class="honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <label>Nome pizzeria<input required name="pizzeria" autocomplete="organization" placeholder="Es. Pizzeria da Mario"></label>
+    <label>Nome referente<input required name="referente" autocomplete="name" placeholder="Nome e cognome"></label>
     <div class="row">
-      <label>Città<input required name="citta" placeholder="Città"></label>
-      <label>Telefono<input required name="telefono" placeholder="+39 ..."></label>
+      <label>Città<input required name="citta" autocomplete="address-level2" placeholder="Città"></label>
+      <label>Telefono<input required type="tel" name="telefono" autocomplete="tel" placeholder="+39 ..."></label>
     </div>
-    <label>Email<input required type="email" name="email" placeholder="nome@pizzeria.it"></label>
-    <label class="check"><input required type="checkbox"><span>Acconsento a essere ricontattato per ricevere informazioni su TOH! Partner.</span></label>
+    <label>Email<input required type="email" name="email" autocomplete="email" placeholder="nome@pizzeria.it"></label>
+    <label>Messaggio <span class="optional">(opzionale)</span><textarea name="messaggio" rows="4" placeholder="Raccontaci brevemente cosa ti serve..."></textarea></label>
+    <label class="check"><input required type="checkbox" name="consenso_ricontatto" value="Sì"><span>Acconsento a essere ricontattato per ricevere informazioni su TOH! Partner.</span></label>
     <button class="btn full" type="submit">RICHIEDI INFORMAZIONI</button>
-    <small id="formNote">Anteprima: collegheremo l'invio al recapito TOH! definitivo prima della pubblicazione.</small>
+    <small id="formNote" aria-live="polite">La richiesta verrà inviata a partner@tohfood.it.</small>
   </form>
 </section>
 
@@ -175,7 +181,7 @@
   <div>
     <span>CONTATTI</span>
     <h2>Parliamo di TOH!</h2>
-    <p>I riferimenti definitivi verranno completati prima della pubblicazione.</p>
+    <p>Per informazioni generali o per portare TOH! nella tua pizzeria, scrivici: ti ricontatteremo appena possibile.</p>
   </div>
   <div class="contact-cards">
     <a href="mailto:partner@tohfood.it"><b>Partner</b><span>partner@tohfood.it</span></a>

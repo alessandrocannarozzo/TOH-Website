@@ -158,11 +158,8 @@
     <p>Stiamo preparando le prime attivazioni. Lasciaci i tuoi dati: ti ricontatteremo per mostrarti il sistema e spiegarti come aderire.</p>
     <div class="mini-points"><span>✓ Configurazione guidata</span><span>✓ Supporto TOH!</span><span>✓ Terminale dedicato</span></div>
   </div>
-  <form class="lead-form" id="partnerLeadForm" action="https://formsubmit.co/ajax/partner@tohfood.it" method="POST" onsubmit="return submitLead(event)">
-    <input type="hidden" name="_subject" value="Nuova richiesta TOH! Partner da tohfood.it">
-    <input type="hidden" name="_template" value="table">
-    <input type="hidden" name="_url" value="https://tohfood.it/#partner">
-    <input type="text" name="_honey" class="honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+  <form class="lead-form" id="partnerLeadForm" onsubmit="return submitLead(event)">
+    <input type="text" name="website" class="honey" tabindex="-1" autocomplete="off" aria-hidden="true">
     <label>Nome pizzeria<input required name="pizzeria" autocomplete="organization" placeholder="Es. Pizzeria da Mario"></label>
     <label>Nome referente<input required name="referente" autocomplete="name" placeholder="Nome e cognome"></label>
     <div class="row">

@@ -7,3 +7,6 @@
 .legal-note{padding:18px 20px;border-radius:18px;background:rgba(255,255,255,.08);margin:24px 0}
 .legal-back{display:inline-block;margin-bottom:28px;text-decoration:none;font-weight:800}
 .legal-page a{text-decoration:underline}
+
+/* TOH! v2.4 - offerta Restaurant */
+.price-callout{margin:22px 0 8px;padding:18px 20px;border-radius:18px;background:#071a36;color:#fff;display:inline-flex;gap:14px;align-items:center;flex-wrap:wrap}.price-callout strong{font-size:28px;color:#fff}.price-callout span{font-size:13px;font-weight:800}.price-callout em{font-style:normal;color:#ff6b9b;font-weight:900}

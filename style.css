@@ -43,3 +43,22 @@ img,svg,video,canvas{max-width:100%;height:auto}
   footer{padding-left:18px;padding-right:18px}
   .footer-links{max-width:100%;gap:14px}
 }
+
+/* v2.4.2 — messaggio commissioni in Home */
+.commission-banner{background:#fff;padding:38px max(5vw,34px);border-bottom:1px solid #eef1f5}
+.commission-banner-inner{max-width:1240px;margin:0 auto;background:linear-gradient(135deg,#071a36 0%,#102c52 100%);color:#fff;border-radius:26px;padding:34px 40px;display:grid;grid-template-columns:1fr auto;column-gap:34px;align-items:center;box-shadow:0 18px 45px rgba(7,26,54,.12)}
+.commission-kicker{grid-column:1;font-size:11px;letter-spacing:.17em;font-weight:900;color:#ff1a5f;margin-bottom:8px}
+.commission-banner h2{grid-column:1;margin:0;font-size:clamp(28px,3vw,44px);line-height:1.05;letter-spacing:-.035em}
+.commission-banner h2 em{font-style:normal;color:#ff1654}
+.commission-banner p{grid-column:1;margin:12px 0 0;color:#d6dfeb;font-size:16px;line-height:1.5}
+.commission-btn{grid-column:2;grid-row:1/4;white-space:nowrap}
+@media(max-width:900px){.commission-banner-inner{grid-template-columns:1fr}.commission-btn{grid-column:1;grid-row:auto;margin-top:22px;justify-self:start}}
+@media(max-width:560px){.commission-banner{padding:22px}.commission-banner-inner{padding:28px 22px;border-radius:20px}.commission-banner h2{font-size:32px}.commission-banner p{font-size:15px}.commission-btn{width:100%}}
+
+/* v2.4.3 — messaggio commissioni visibile direttamente nella Hero */
+.hero-commission-message{margin:24px 0 4px;padding:18px 20px;border:1px solid rgba(255,255,255,.22);border-left:5px solid #ff1654;border-radius:16px;background:rgba(255,255,255,.07);max-width:650px}
+.hero-commission-message strong,.hero-commission-message span,.hero-commission-message small{display:block}
+.hero-commission-message strong{font-size:22px;color:#fff}
+.hero-commission-message span{font-size:22px;font-weight:900;color:#ff4b82;margin-top:2px}
+.hero-commission-message small{font-size:13px;line-height:1.45;color:#d6dfeb;margin-top:8px}
+@media(max-width:560px){.hero-commission-message{padding:15px 16px;margin-top:20px}.hero-commission-message strong,.hero-commission-message span{font-size:19px}}
